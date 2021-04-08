@@ -1,0 +1,135 @@
+@font-face {
+    font-family: main;
+    src: url(fonty/ACETONE.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background: linear-gradient(180deg, rgb(240, 248, 255), rgb(80, 80, 80));
+    background-repeat: none;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 1% 0px;
+    grid-template-columns: 0.5fr 3fr 0.fr;
+}
+
+
+
+nav {
+    grid-column: 1/4;
+    margin-top: 2%;
+    background: black;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 0.5fr 2fr 3fr 0.5fr;
+}
+
+.logo {
+    padding: 10px 40px;
+    color: aliceblue;
+    width: 90px;
+    height: 90px;
+    grid-column: 1/3;
+    justify-self: start;
+}
+
+.navlink {
+    grid-column: 3/4;
+    font-family: main;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.navlink a {
+    text-decoration: none;
+    justify-self: center;
+    margin: 0px 10px;
+    color: aliceblue;
+}
+
+
+.Section {
+    width: 90%;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 1px;
+    /*
+    display: grid;
+    margin: 1%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+*/
+
+}
+
+.upper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+}
+
+h3 {
+    font-family: main;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.p1 {
+    grid-column: 1/1;
+    padding: 2%;
+   font-size: 20px;
+    text-align:  center;
+}
+
+
+.landimg {
+    width: 90%;
+    height: 95%;
+    place-self: center;
+    grid-row: 1/2;
+    grid-column: 2/3
+}
+
+
+.main1 {
+    display: grid;
+    background-color: grey;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(min(29rem, 100%), 1fr));
+    /*    grid-template-columns: 1fr 1fr 1fr;*/
+    grid-gap: 3vh 1vw;
+    list-style: none;
+}
+
+.main1 li img {
+    /*    margin: 1%;*/
+}
+
+
+.image1 {
+    grid-row: 1/3;
+    grid-column: 2/4;
+}
+
+
+
+.main2 {
+    color: grey;
+    grid-row: 2/2;
+    grid-column: 1/2;
+}
+
+.products {
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+}
