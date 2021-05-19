@@ -4,9 +4,11 @@
     <!--  title / link to style  -->
     <title>sweats and beans</title>
     <link rel="stylesheet" href="style.css">
+    <script src="shop.js"></script>
 </head>
 
-<body>
+
+<body onload="loadCart()">
     <!--  nav  -->
     <nav>
         <img class="logo" src="img/logo.jpg">
@@ -15,6 +17,7 @@
             <a href="index.html">HOME</a>
             <a href="store.html">STORE</a>
             <a href="cart.html">CART</a>
+
         </div>
     </nav>
     <div class="Section">
@@ -27,27 +30,9 @@
             <img class="landimg" src="img/cullns%20shit%5B4%5D.jpg">
         </div>
         <!--   lower section     -->
-        <ul class="main1">
-            <li>
-                <img class="products" src="img/male%20sweater%20grey.jpg" alt="p1">
-            </li>
-            <li>
-                <img class="products" src="img/beany%20green.jpg" alt="p2">
-            </li>
-            <li>
-                <img class="products" src="img/female%20sweater%20blue.jpg" alt="p3">
-            </li>
-            <li>
-                <img class="products" src="img/female%20sweater%202%20purple.jpg" alt="p4">
-            </li>
-            <li>
-                <img class="products" src="" alt="p5">
-            </li>
-            <li>
-                <img class="products" src="" alt="p6">
-            </li>
-
+            <h1>Cart Items:</h1>
+            <h2 id='itemCount'>0</h2>
+        <ul id="cartMain3">
+            
         </ul>
     </div>
-
-</body>
